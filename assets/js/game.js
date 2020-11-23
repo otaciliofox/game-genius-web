@@ -40,8 +40,6 @@ let lightColor = (element, number) => {
 let checkOrder = () => {
   for (let i in clickedOrder) {
     if (clickedOrder[i] != order[i]) {
-      const element = document.querySelector(".selected");            
-      element.classList.remove("selected");
       gameOver();
       break;
     }
@@ -91,7 +89,7 @@ let gameOver = () => {
   );
   order = [];
   clickedOrder = [];
-  
+
   playGame();
 };
 
